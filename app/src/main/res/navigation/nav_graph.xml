@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/statisticFragment">
+
+    <fragment
+        android:id="@+id/statisticFragment"
+        android:name="com.example.appexpensemanager.presentation.statistics.StatisticFragment"
+        android:label="balance_fragment"
+        tools:layout="@layout/statistic_fragment" />
+    <fragment
+        android:id="@+id/addTransactionFragment"
+        android:name="com.example.appexpensemanager.presentation.addTransaction.AddTransactionFragment"
+        android:label="add_transaction_fragment"
+        tools:layout="@layout/add_transaction_fragment" >
+        <action
+            android:id="@+id/action_addTransactionFragment_to_expensesFragment2"
+            app:destination="@id/expensesFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/nav_graph" />
+    </fragment>
+    <fragment
+        android:id="@+id/expensesFragment"
+        android:name="com.example.appexpensemanager.presentation.expenses.ExpensesFragment"
+        android:label="expenses_fragment"
+        tools:layout="@layout/expenses_fragment" >
+        <action
+            android:id="@+id/action_expensesFragment_to_addTransactionFragment"
+            app:destination="@id/addTransactionFragment"
+            app:enterAnim="@anim/fade_transition_animation_enter"
+            app:popUpTo="@id/expensesFragment" />
+        <action
+            android:id="@+id/action_expensesFragment_to_updateTransactionFragment"
+            app:destination="@id/updateTransactionFragment"
+            app:popUpTo="@id/expensesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateTransactionFragment"
+        android:name="com.example.appexpensemanager.presentation.updateTransaction.UpdateTransactionFragment"
+        android:label="UpdateTransactionFragment" >
+        <action
+            android:id="@+id/action_updateTransactionFragment_to_expensesFragment"
+            app:destination="@id/expensesFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/nav_graph" />
+        <argument
+            android:name="transaction"
+            app:argType="com.example.appexpensemanager.data.models.TransactionEntry" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment1"
+        android:name="com.example.appexpensemanager.Fragment1"
+        android:label="fragment_1"
+        tools:layout="@layout/fragment_1" />
+</navigation>

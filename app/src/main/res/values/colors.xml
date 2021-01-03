@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="mainColor">#000000</color>
+    <color name="black">#FF000000</color>
+    <color name="lightBlack">#131313</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#676666</color>
+    <color name="red">#FF0000</color>
+    <color name="background_splash_screen">#FFFFFF</color>
+
+    <color name="nightIconColor">#000000</color>
+    <color name="statusBarColor">#000000</color>
+    <color name="navBarColor">#FFFFFF</color>
+    <color name="dateStrokeColor">#9C9A9A</color>
+    <color name="backgroundDateButton">#FFFFFF</color>
+    <color name="buttonStrokeColor">#000000</color>
+    <color name="backgroundTextInputColor">#FFFFFFFF</color>
+    <color name="backgroundHoleColor">#FFFFFFFF</color>
+    <color name="dateTextColor">#878787</color>
+    <color name="categoryTextColor">#000000</color>
+    <color name="legendTextColor">#000000</color>
+    <color name="pieValueTextColor">#E1E3E6</color>
+    <color name="entryLabelColor">#000000</color>
+    <color name="amountTextColor">#EA7676</color>
+    <color name="colorToolbar">#FFFFFF</color>
+    <color name="colorBottomNav">#FFFFFF</color>
+    <color name="fab_color">#000000</color>
+    <color name="color_inactive_botNav">#7A7979</color>
+    <color name="color_active_botNav">#000000</color>
+    <color name="boxStrokeColor">#000000</color>
+</resources>
